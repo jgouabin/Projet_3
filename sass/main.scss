@@ -1,1 +1,47 @@
 @import "./utils/variables";
+
+/*
+@media (max-width: 599px) {
+ .proj-grid {
+    grid-template-columns: 1fr;
+    }
+    }
+    */
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    img{
+        width: 50%;
+        margin-top: 20px;
+        margin-left: 25%;
+        margin-bottom:20px;
+    }
+    .header__ville{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        text-align: center;
+        background-color: map-get($color , fond_ville );
+        p{
+            margin-left: 20px;
+        }
+        .fas{
+            margin-top: 15px;
+        }
+    }
+    .header__libreserve{
+        text-align: center;
+        font-size: 22px;
+        background-color: map-get($color , fond_card );
+        margin-top: 20px;
+        margin-bottom: -20px;
+    }
+    .header__libdecouverte{
+        text-align: center;
+        background-color: map-get($color , fond_card);
+    };
+}

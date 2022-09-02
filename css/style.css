@@ -1,0 +1,47 @@
+/*
+@media (max-width: 599px) {
+ .proj-grid {
+    grid-template-columns: 1fr;
+    }
+    }
+    */
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+}
+.header img {
+  width: 50%;
+  margin-top: 20px;
+  margin-left: 25%;
+  margin-bottom: 20px;
+}
+.header .header__ville {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  background-color: #EAEAEA;
+}
+.header .header__ville p {
+  margin-left: 20px;
+}
+.header .header__ville .fas {
+  margin-top: 15px;
+}
+.header .header__libreserve {
+  text-align: center;
+  font-size: 22px;
+  background-color: #F6F6F6;
+  margin-top: 20px;
+  margin-bottom: -20px;
+}
+.header .header__libdecouverte {
+  text-align: center;
+  background-color: #F6F6F6;
+}
+
+/*# sourceMappingURL=style.css.map */
