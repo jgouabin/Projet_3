@@ -1,30 +1,29 @@
 @import "./utils/variables";
+@import "./layout/header";
 
 /*
 @media (max-width: 599px) {
  .proj-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns:1fr;
     }
     }
-    */
+*/
+
 body{
     font-family: 'Roboto', sans-serif;
+    margin: 0;
 }
 
-.header{
-    display: flex;
-    flex-direction: column;
-    img{
-        width: 50%;
-        margin-top: 20px;
-        margin-left: 25%;
-        margin-bottom:20px;
-    }
-    .header__ville{
+
+.explorer{
+    border-top: 2px map-get($color , bordure_ville);
+    border-top-style: groove;
+    text-align: center;
+    background-color: map-get($color , fond_card );
+    
+    &__ville{
         display: flex;
-        flex-direction: row;
         justify-content: center;
-        text-align: center;
         background-color: map-get($color , fond_ville );
         p{
             margin-left: 20px;
@@ -33,15 +32,25 @@ body{
             margin-top: 15px;
         }
     }
-    .header__libreserve{
-        text-align: center;
+    &__lib-reserve{
         font-size: 22px;
-        background-color: map-get($color , fond_card );
-        margin-top: 20px;
-        margin-bottom: -20px;
+        padding-top: 20px;
+        h3{
+            margin: 10px;
+        }
     }
-    .header__libdecouverte{
+    /*
+    .explorer__lib-decouverte{
         text-align: center;
-        background-color: map-get($color , fond_card);
-    };
+    }*/
+}
+.fonctionnement{
+    h3{
+        margin-left: 20px;
+    }
+   /* .fonctionnement__liste{*/
+        &__btn{
+            justify-content: space-around;
+        }
+   /* }*/
 }

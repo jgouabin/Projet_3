@@ -11,29 +11,45 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap" rel="stylesheet"> 
 </head>
 <body>
-    <header class="header">
-        <img src="images/logo/ohmyfood.png" alt="Logo OhmyFood">
-        <div class="header__ville">
+    <header class="header"> 
+        <img class="logo" src="images/logo/ohmyfood.png" alt="Logo OhmyFood">
+    </header>
+
+    <section class="explorer">
+        <div class="explorer__ville">
             <i class="fas fa-map-marker-alt"></i>
             <p>Paris, Bellevile</p>
         </div>
-        <div class="header__libreserve">
+        <div class="explorer__lib-reserve">
             <h3>Réservez le menu qui vous convient</h3>
         </div>
-        <div class="header__libdecouverte">
+        <div class="explorer__lib-decouverte">
             <p>Découvrez des restaurants d'exception, sélectionnés par nos soins</p>
         </div>  
+        <div>
             <a href="#" >"Explorer nos restaurants"</a>
         </div>
-        <nav>
-            <h3>Fonctionnement</h3>
-            <a href="#" Choisissez un restaurant></a>
-            <a href="#" Composez votre menu></a>
-            <a href="#" Dégustez au restaurant></a>
-        </nav>
+    </section>  
 
-    </header>
-    
+    <section class="fonctionnement">
+        <h3>Fonctionnement</h3>
+
+        <div class="fonctionnement__liste">
+            <div class="fonctionnement__btn">
+                <i class="fa-solid fa-mobile-alt"></i>
+                <span>  Choisissez un restaurant></span>
+            </div>
+            <div class="fonctionnement__btn">
+                <i class="fa-solid fa-list"></i>
+                <span>  Composez votre menu></span>
+            </div>
+            <div class="fonctionnement__btn">
+                <i class="fa-solid fa-store"></i>
+                <span>  Dégustez au restaurant></span>
+            </div>
+        </div>
+    </section>
+
     <section class="restaurants">
         <h3>Restaurants</h3>
         <div class=restaurants__cards>
@@ -52,10 +68,21 @@
         </div>
     </section>
 
-    <footer>
-        <img src="" alt="">
-        <div>
-            
-        </div>
+    <footer class="footer">
+        <span>ohmyfood</span>
+        <ul>
+            <li class="footer__proposition">
+              <a href="#">Proposer un restaurant</a>
+            </li>
+            <li class="footer__partenaire">
+              <a href="#">Devenir partenaire</a>
+            </li>
+            <li class="footer__mentions">
+              <a href="#">Mentions légales</a>
+            </li>
+            <li class="footer__mailto">
+              <a href="mailto:contact@ohmyfood.fr">Contact</a>
+            </li>
+          </ul>
     </footer>
 </body>

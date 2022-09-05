@@ -1,47 +1,64 @@
+.header {
+  display: flex;
+  justify-content: center;
+}
+
+.logo {
+  width: 150px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
 /*
 @media (max-width: 599px) {
  .proj-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns:1fr;
     }
     }
-    */
+*/
 body {
   font-family: "Roboto", sans-serif;
+  margin: 0;
 }
 
-.header {
-  display: flex;
-  flex-direction: column;
-}
-.header img {
-  width: 50%;
-  margin-top: 20px;
-  margin-left: 25%;
-  margin-bottom: 20px;
-}
-.header .header__ville {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+.explorer {
+  border-top: 2px rgba(97, 92, 92, 0.2431372549);
+  border-top-style: groove;
   text-align: center;
+  background-color: #F6F6F6;
+  /*
+  .explorer__lib-decouverte{
+      text-align: center;
+  }*/
+}
+.explorer__ville {
+  display: flex;
+  justify-content: center;
   background-color: #EAEAEA;
 }
-.header .header__ville p {
+.explorer__ville p {
   margin-left: 20px;
 }
-.header .header__ville .fas {
+.explorer__ville .fas {
   margin-top: 15px;
 }
-.header .header__libreserve {
-  text-align: center;
+.explorer__lib-reserve {
   font-size: 22px;
-  background-color: #F6F6F6;
-  margin-top: 20px;
-  margin-bottom: -20px;
+  padding-top: 20px;
 }
-.header .header__libdecouverte {
-  text-align: center;
-  background-color: #F6F6F6;
+.explorer__lib-reserve h3 {
+  margin: 10px;
+}
+
+.fonctionnement {
+  /* .fonctionnement__liste{*/
+  /* }*/
+}
+.fonctionnement h3 {
+  margin-left: 20px;
+}
+.fonctionnement__btn {
+  justify-content: space-around;
 }
 
 /*# sourceMappingURL=style.css.map */
