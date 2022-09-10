@@ -1,5 +1,7 @@
 @import "./utils/variables";
+@import "./utils/mixins";
 @import "./layout/header";
+@import "./base/bases";
 
 /*
 @media (max-width: 599px) {
@@ -9,10 +11,7 @@
     }
 */
 
-body{
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-}
+
 
 
 .explorer{
@@ -20,37 +19,92 @@ body{
     border-top-style: groove;
     text-align: center;
     background-color: map-get($color , fond_card );
-    
+    padding-bottom: 60px;
     &__ville{
         display: flex;
+        height: 45px;
         justify-content: center;
         background-color: map-get($color , fond_ville );
         p{
             margin-left: 20px;
+            margin-top: 12px;
+            font-weight: 400;
         }
         .fas{
-            margin-top: 15px;
+            margin-top: 12px;
         }
     }
     &__lib-reserve{
-        font-size: 22px;
-        padding-top: 20px;
+        font-size: 20px;
+        padding-top: 14px;
+        margin-left: 30px;
+        margin-right: 30px;
         h3{
-            margin: 10px;
+            margin-bottom: 0;
         }
     }
-    /*
-    .explorer__lib-decouverte{
-        text-align: center;
-    }*/
+
+    &__lib-decouverte{
+        p{
+            font-weight: 100;
+            margin-top: 10px;
+            margin-bottom: 25px;
+        }
+    }
+    &__btn{
+        padding-top: 15px;
+        a{
+            @include bouton;
+        }
+    }
 }
-.fonctionnement{
+
+.fctment{
     h3{
-        margin-left: 20px;
+        margin-top: 50px;
+        margin-left: 24px;
+        font-weight: 700;
+        font-size: 22px;
     }
-   /* .fonctionnement__liste{*/
-        &__btn{
-            justify-content: space-around;
+    &__liste{
+       
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        margin:auto;
+        padding-left: 0;
+        list-style-type: none;
+        counter-reset: number;
+        li{
+            
+            &:before {
+                counter-increment: number 1;
+                content: counter(number) "";
+                color: white;
+                background-color: map-get($color , primaire );
+                width: 23px;
+                height: 23px;
+                border-radius: 50%;
+                position: absolute;             
+                margin-left: -35px;    
+                display: flex;            
+                justify-content: center;
+                
+              }
+            
+            margin-top: 10px;
+            margin-bottom: 10px;
+            padding: 23px;        
+            font-size: 16px;
+            background-color: map-get($color,fond_card );
+            border-radius: 20px;
+            box-shadow: 5px 5px 15px map-get($color,ombre);  
+           i{
+                margin-right: 25px;
+           }
         }
-   /* }*/
+    }
 }
+/*.restaurants{
+
+        }*/

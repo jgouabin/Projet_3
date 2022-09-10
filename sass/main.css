@@ -84,13 +84,15 @@ body {
 .fctment__liste {
   display: flex;
   flex-direction: column;
-  width: 300px;
-  margin: auto;
-  padding-left: 0;
-  list-style-type: none;
-  counter-reset: number;
+  justify-content: center;
+  width: 85%;
+  max-width: 500px;
+  margin-left: 8%;
 }
-.fctment__liste li {
+.fctment__liste__card {
+  /* display: flex;*/
+  /* flex-direction: row;*/
+  /*justify-content: center;*/
   margin-top: 10px;
   margin-bottom: 10px;
   padding: 23px;
@@ -99,7 +101,7 @@ body {
   border-radius: 20px;
   box-shadow: 5px 5px 15px #BEBEBE;
 }
-.fctment__liste li:before {
+.fctment__liste__card:before {
   counter-increment: number 1;
   content: counter(number) "";
   color: white;
@@ -108,16 +110,16 @@ body {
   height: 23px;
   border-radius: 50%;
   position: absolute;
-  margin-left: -35px;
+  /*left: 15px;*/
+  left: 8%;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
-.fctment__liste li i {
+.fctment__liste__card i {
   margin-right: 25px;
 }
 
 /*.restaurants{
 
-        }*/
-
-/*# sourceMappingURL=style.css.map */
+        }*//*# sourceMappingURL=main.css.map */
