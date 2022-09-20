@@ -1,0 +1,11 @@
+// placeholder
+
+%bouton {
+    padding: 15px 25px;
+    font-size: 15px;
+    color: $color_police_btn;
+    text-decoration: none;
+    border-radius: 30px;
+    background: linear-gradient(170deg, $color_secondaire, $color_primaire);
+    box-shadow: 5px 5px 15px $color_ombre;
+}

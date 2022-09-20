@@ -1,3 +1,13 @@
+/*
+@mixin bouton {
+    padding: 15px 25px;
+    font-size: 15px;
+    color: map-get($color,police_btn);
+    text-decoration: none;
+    border-radius: 30px;
+    background: linear-gradient(170deg, map-get($color,secondaire), map-get($color,primaire));
+    box-shadow: 5px 5px 15px map-get($color,ombre);
+}*/
 .header {
   display: flex;
   justify-content: center;
@@ -9,17 +19,16 @@
   margin-bottom: 10px;
 }
 
-body {
-  font-family: "Roboto", sans-serif;
-  margin: 0;
-  /*box-sizing: content-box;*/
+.explorer__btn a {
+  padding: 15px 25px;
+  font-size: 15px;
+  color: white;
+  text-decoration: none;
+  border-radius: 30px;
+  background: linear-gradient(170deg, #FF79DA, #9356DC);
+  box-shadow: 5px 5px 15px #BEBEBE;
 }
 
-/*
-.fa-solid, .fas {
-    font-family: "Font Awesome 6 Free";
-    font-weight: 900;
-}*/
 /*
 @media (max-width: 599px) {
  .proj-grid {
@@ -38,7 +47,7 @@ body {
   display: flex;
   height: 45px;
   justify-content: center;
-  background-color: #EAEAEA;
+  background-color: rgba(97, 92, 92, 0.2431372549);
 }
 .explorer__ville p {
   margin-left: 20px;
@@ -65,16 +74,9 @@ body {
 .explorer__btn {
   padding-top: 15px;
 }
-.explorer__btn a {
-  padding: 15px 25px;
-  font-size: 15px;
-  color: white;
-  text-decoration: none;
-  border-radius: 30px;
-  background: linear-gradient(170deg, #FF79DA, #9356DC);
-  box-shadow: 5px 5px 15px #BEBEBE;
+.fctment {
+  margin-bottom: 50px;
 }
-
 .fctment h3 {
   margin-top: 50px;
   margin-left: 24px;
@@ -116,8 +118,81 @@ body {
   margin-right: 25px;
 }
 
-/*.restaurants{
+.restaurants {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  background-color: #F6F6F6;
+}
+.restaurants h3 {
+  margin-top: 50px;
+  margin-left: 24px;
+  font-weight: 700;
+  font-size: 22px;
+}
+.restaurants__cards {
+  max-width: 1000px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
 
-        }*/
+.restaurant__card {
+  width: 95%;
+  height: 220px;
+  margin-bottom: 30px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 2px 2px 15px #BEBEBE;
+  text-decoration: none;
+  color: black;
+}
+.restaurant__card__image {
+  position: relative;
+}
+.restaurant__card__image img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+.restaurant__card__image__new {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  color: green;
+  background-color: #99E2D0;
+  padding: 5px;
+  font-weight: 500;
+  border-radius: 3px;
+}
+
+.restaurant__card__infos {
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  font-weight: 300;
+}
+.restaurant__card__infos h4 {
+  font-size: 20px;
+  margin-top: 7px;
+  margin-bottom: 3px;
+  margin-left: 10px;
+}
+.restaurant__card__infos span {
+  font-size: 17px;
+  margin-left: 10px;
+  font-weight: 100;
+}
+
+.card_icon-coeur {
+  position: absolute;
+  font-size: 16px;
+}
+.card_icon-coeur .fa-heart {
+  right: 50px;
+  margin-top: 20px;
+  font-weight: 100;
+}
 
 /*# sourceMappingURL=style.css.map */
