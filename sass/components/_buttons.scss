@@ -8,4 +8,7 @@
     border-radius: 30px;
     background: linear-gradient(170deg, $color_secondaire, $color_primaire);
     box-shadow: 5px 5px 15px $color_ombre;
+    &:hover {
+        transform: scale(1.03);
+    }
 }

@@ -1,0 +1,51 @@
+// FOOTER
+
+@import "../utils/variables";
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 180px;
+    background-color: $color_fond_footer;
+    font-size: 18px;
+    color: white;
+    &__logo{
+        font-family: "Shrikhand";
+        font-style: italic;
+        font-weight: 400;
+        margin-top: 30px;
+        margin-left: 35px;
+    }
+    ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+       
+        li{
+            margin-bottom: 5px;
+            list-style: none;
+        }
+        a{
+            font-size: 14px;
+            color: white;
+            text-decoration: none;
+        }
+    }
+    .fa-solid{
+        font-size: 14px;
+        margin-right: 5px;
+    }       
+
+    @media (min-width: 450px) {
+        ul{ 
+            flex-wrap: wrap;
+            flex-direction: row;
+            max-width: 1000px;
+            justify-content: space-around;
+            li{
+                margin-right: 30px;
+            }
+        }
+    }
+}
