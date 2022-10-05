@@ -1,3 +1,14 @@
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+}
+
 /*
 @mixin bouton {
     padding: 15px 25px;
@@ -12,8 +23,7 @@
   display: flex;
   justify-content: center;
 }
-
-.logo {
+.header__logo {
   font-family: "Shrikhand";
   font-size: 30px;
   font-weight: 400;
@@ -85,13 +95,6 @@ body {
   transform: scale(1.03);
 }
 
-/*
-@media (max-width: 599px) {
- .proj-grid {
-    grid-template-columns:1fr;
-    }
-    }
-*/
 .explorer {
   border-top: 2px rgba(97, 92, 92, 0.2431372549);
   border-top-style: groove;
@@ -144,14 +147,13 @@ body {
 }
 .fctment__liste {
   margin: auto;
-  padding-left: 0;
-  list-style-type: none;
+  padding-left: 10px;
   counter-reset: number;
 }
 .fctment__liste li {
   margin-top: 20px;
   margin-bottom: 10px;
-  padding: 25px;
+  padding: 20px 14px;
   font-size: 15px;
   background-color: #F6F6F6;
   border-radius: 20px;
@@ -166,7 +168,7 @@ body {
   height: 23px;
   border-radius: 50%;
   position: absolute;
-  margin-left: -35px;
+  margin-left: -32px;
   display: flex;
   justify-content: center;
 }
@@ -176,6 +178,7 @@ body {
 }
 .fctment__liste li i {
   margin-right: 25px;
+  margin-left: 25PX;
 }
 
 .restaurants {
@@ -203,7 +206,6 @@ body {
   background-color: white;
   border-radius: 15px;
   box-shadow: 2px 2px 15px #BEBEBE;
-  text-decoration: none;
   color: black;
 }
 .restaurant__card__image {
@@ -258,8 +260,37 @@ body {
   background-color: transparent;
   background-image: linear-gradient(#9356DC, #FF79DA);
   background-clip: text;
-  -webkit-background-clip: text;
-  transition: all 1000ms;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.header__entete {
+  display: flex;
+  flex-direction: row;
+  height: 60px;
+  text-align: center;
+}
+.header__fleche {
+  position: absolute;
+  left: 5%;
+  top: 20px;
+  font-size: 20px;
+  font-weight: 600;
+}
+.header__logo {
+  margin-top: 10px;
+  font-size: 28px;
+  font-weight: 300;
+  font-style: italic;
+}
+.header img {
+  height: 250px;
+  width: 100%;
+  object-fit: cover;
 }
 
 /*# sourceMappingURL=style.css.map */

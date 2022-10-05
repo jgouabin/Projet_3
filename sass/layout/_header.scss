@@ -1,15 +1,16 @@
 .header{
     display: flex;
     justify-content: center;
+    &__logo{
+    font-family: "Shrikhand";
+    font-size: 30px;
+    font-weight: 400;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    }
 }
 
-.logo{
-   font-family: "Shrikhand";
-   font-size: 30px;
-   font-weight: 400;
-   margin-top: 20px;
-   margin-bottom: 20px;
-}
+
 
 body{
     font-family: "Roboto";
