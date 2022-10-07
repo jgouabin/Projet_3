@@ -31,3 +31,67 @@
         object-fit: cover;
     }
 }
+
+.resto{
+    background-color: $olor_fond_resto;
+    padding-bottom: 35px;
+    margin-left: auto;
+    margin-right: auto;
+    &__nom{
+        display: flex;
+        flex-direction: row;
+        //margin-top: ;
+        border-radius: 35px 35px 0 0 ;
+        position: relative;
+        //padding-top: 50px;
+        text-align: center;
+        width: 100%;
+        h2{
+            font-family: "Shrikhand";
+            font-weight: 100;
+            margin-left: 20px;
+        }     
+    }
+    &__coeur{
+        .fa-heart{
+            position: absolute;
+            right: 25px;
+            top: 37px;
+            font-size: 22px;
+        }
+    }
+}
+
+.menu{
+    display: grid;
+    grid-template-columns: 1fr;
+    position: relative;
+    font-family: "Roboto";
+    &__card{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    h3{
+        font-size: 17px;
+        font-weight: 300;
+        &:before{
+            position: absolute;
+            content: "";
+            height: 4px;
+            width: 45px;
+            background-color: $color_trait_sousmenu;
+            top: 40px;
+         }
+    }
+    ul{
+        padding-left: 0;
+        li{
+            display: flex;
+            background-color: white;
+            //$color_fond_card;
+            border-radius: 15px;
+            margin-bottom: 20px;
+            padding-top: 30px;
+        }
+    }
+}

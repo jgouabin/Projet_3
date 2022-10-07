@@ -35,7 +35,7 @@ body {
   font-family: "Roboto";
   margin: 0;
 }
-
+/*
 .footer {
   display: flex;
   flex-direction: column;
@@ -44,7 +44,7 @@ body {
   background-color: #353535;
   font-size: 18px;
   color: white;
-}
+}*/
 .footer__logo {
   font-family: "Shrikhand";
   font-style: italic;
@@ -292,5 +292,72 @@ body {
   width: 100%;
   object-fit: cover;
 }
+
+.resto {
+  background-color: #f7f7f7;
+  padding-bottom: 35px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.resto__nom {
+  display: flex;
+  flex-direction: row;
+  border-radius: 35px 35px 0 0;
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+.resto__nom h2 {
+  font-family: "Shrikhand";
+  font-weight: 100;
+  margin-left: 20px;
+}
+.resto__coeur .fa-heart {
+  position: absolute;
+  right: 25px;
+  top: 37px;
+  font-size: 22px;
+}
+
+.menu {
+  display: grid;
+  grid-template-columns: 1fr;
+  position: relative;
+  font-family: "Roboto";
+}
+.menu__card {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.menu h3 {
+  font-size: 17px;
+  font-weight: 300;
+}
+.menu h3:before {
+  position: absolute;
+  content: "";
+  height: 4px;
+  width: 45px;
+  background-color: #99E2D0;
+  top: 40px;
+}
+.menu ul {
+  padding-left: 0;
+}
+.menu ul li {
+  display: flex;
+  background-color: white;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  padding-top: 30px;
+}
+
+/*
+@media (max-width: 599px) {
+ .proj-grid {
+    grid-template-columns:1fr;
+    }
+    }
+*/
 
 /*# sourceMappingURL=style.css.map */
