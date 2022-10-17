@@ -36,11 +36,11 @@
             margin-bottom: 25px;
         }
     }
-    &__btn{
-        padding-top: 15px;
-        a{
-            @extend %bouton;
-        }
+
+.bouton{
+    padding-top: 15px;
+    //a{
+    //    @extend %bouton;
     }
 }
 

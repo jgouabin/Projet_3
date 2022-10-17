@@ -37,6 +37,12 @@
     padding-bottom: 35px;
     margin-left: auto;
     margin-right: auto;
+
+    top: -70px;
+    position: relative;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    
     &__nom{
         display: flex;
         flex-direction: row;
@@ -70,19 +76,22 @@
     &__card{
         padding-left: 20px;
         padding-right: 20px;
+        overflow: hidden;
     }
     h3{
         font-size: 17px;
         font-weight: 300;
+        position: relative;
         &:before{
             position: absolute;
             content: "";
             height: 4px;
             width: 45px;
             background-color: $color_trait_sousmenu;
-            top: 40px;
+            top: 20px;
          }
     }
+
     ul{
         padding-left: 0;
         li{
@@ -91,7 +100,44 @@
             //$color_fond_card;
             border-radius: 15px;
             margin-bottom: 20px;
-            padding-top: 30px;
+           // padding-top: 30px;
+            box-shadow: 0 3px 9px $color_ombre;
         }
+    }
+
+    &__contenu{
+        padding: 0;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        flex: 1;
+        h4{
+            margin: 0;
+            padding-left: 15px;
+            padding-bottom: 5px;
+            padding-top: 10px;
+           // white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        span{
+            margin: 0;
+            font-size: 14px;
+            font-weight: 100;
+            padding-bottom: 10px;
+            padding-left: 15px;
+           // white-space: ;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    }
+    span{
+        display: flex;
+        align-items: flex-end;
+        font-weight: 500;
+        margin-left: auto;
+        margin-right: 20px;
+        padding-bottom: 15px;
+
     }
 }
