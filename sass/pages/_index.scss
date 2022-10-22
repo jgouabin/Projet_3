@@ -1,3 +1,7 @@
+.loader{
+    position: absolute;
+    margin: 80px;
+}
 
 .explorer{
     border-top: 2px $color_bordure_ville;
@@ -39,8 +43,6 @@
 
 .bouton{
     padding-top: 15px;
-    //a{
-    //    @extend %bouton;
     }
 }
 
@@ -50,15 +52,26 @@
     width: 90%;
     margin: auto;
     margin-bottom: 50px;
+
     h3{
         margin-top: 50px;
         font-weight: 700;
         font-size: 22px;
     }
     &__liste{
+        display: grid;
+        grid-template-columns: 1fr;
         margin:auto;
         padding-left: 10px;
         counter-reset: number;
+        @media (min-width: 750px) {
+            grid-template-columns: repeat(2,1fr);
+            gap: 0 50px;
+        }
+        @media (min-width: 1280px) {
+            grid-template-columns: repeat(3,1fr);
+            gap: 0 50px;
+        }
         li{
             margin-top: 20px;
             margin-bottom: 10px;
@@ -95,8 +108,10 @@
 }
 .restaurants{
      display: grid;
+     grid-template-columns: 1fr;
      padding-bottom: 40px;
      background-color: $color_fond_card ;
+ 
      h3{
         width: 50%;
         margin-top: 50px;
@@ -105,11 +120,25 @@
         font-size: 22px;
      }
      &__cards{
-         display: flex;
+        display: flex;
          flex-wrap: wrap;
         justify-content: center;
+       // @media (min-width: 750px) {
+       //     display: grid;
+       //     grid-template-columns: 2fr;
+           // flex-direction: row;
+            //flex-wrap: nowrap;
+       //@error//@error     width: 40%;
+            //justify-content: space-around;
+            //grid-template-columns: repeat(2,1fr);
+            //gap: 0 50px;
+      //  }
+      //  @media (min-width: 1280px) {
+      //      flex-direction: row;
+            //grid-template-columns: repeat(3,1fr);
+           // gap: 0 50px;
+       // }
      }
-     //@media 
  }
  
  .restaurant__card{

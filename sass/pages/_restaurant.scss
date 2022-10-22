@@ -23,18 +23,21 @@
         margin-top: 10px;
         font-size: 28px;
         font-weight: 300;
-        font-style: italic;
     }
     img{
-        height: 250px;
+        height: 270px;
         width: 100%;
         object-fit: cover;
     }
 }
 
+.background{
+    background-color: $olor_fond_resto;
+}
+
 .resto{
     background-color: $olor_fond_resto;
-    padding-bottom: 35px;
+   // padding-bottom: 35px;
     margin-left: auto;
     margin-right: auto;
 
@@ -46,25 +49,28 @@
     &__nom{
         display: flex;
         flex-direction: row;
-        //margin-top: ;
         border-radius: 35px 35px 0 0 ;
         position: relative;
-        //padding-top: 50px;
         text-align: center;
         width: 100%;
         h2{
             font-family: "Shrikhand";
-            font-weight: 100;
+            font-weight: 500;
             margin-left: 20px;
+            margin-top: 30px;
+            margin-bottom: 10px;
         }     
     }
     &__coeur{
         .fa-heart{
             position: absolute;
-            right: 25px;
-            top: 37px;
-            font-size: 22px;
+            right: 50px;
+            top: 47px;
+            font-size: 26px;
         }
+    }
+    .bouton{
+        margin-top: 25px;
     }
 }
 
@@ -79,9 +85,10 @@
         overflow: hidden;
     }
     h3{
-        font-size: 17px;
+        font-size: 15px;
         font-weight: 300;
         position: relative;
+        margin-bottom: 20px;
         &:before{
             position: absolute;
             content: "";
@@ -97,10 +104,8 @@
         li{
             display: flex;
             background-color: white;
-            //$color_fond_card;
             border-radius: 15px;
-            margin-bottom: 20px;
-           // padding-top: 30px;
+            margin-bottom: 12px;
             box-shadow: 0 3px 9px $color_ombre;
         }
     }
@@ -116,7 +121,6 @@
             padding-left: 15px;
             padding-bottom: 5px;
             padding-top: 10px;
-           // white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;
         }
@@ -126,7 +130,6 @@
             font-weight: 100;
             padding-bottom: 10px;
             padding-left: 15px;
-           // white-space: ;
             overflow: hidden;
             text-overflow: ellipsis;
         }
@@ -134,10 +137,19 @@
     span{
         display: flex;
         align-items: flex-end;
-        font-weight: 500;
+        font-weight: 300;
         margin-left: auto;
         margin-right: 20px;
-        padding-bottom: 15px;
+        padding-bottom: 12px;
 
+    }
+
+    @media (min-width: 750px) {
+        grid-template-columns: repeat(2,1fr);
+        gap: 20px;
+    }
+    @media (min-width: 1280px) {
+        grid-template-columns: repeat(3,1fr);
+        gap: 20px;
     }
 }

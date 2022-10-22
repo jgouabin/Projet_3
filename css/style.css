@@ -26,16 +26,25 @@ body {
 .header__logo {
   font-family: "Shrikhand";
   font-size: 30px;
-  font-weight: 400;
+  font-weight: 300;
   margin-top: 20px;
   margin-bottom: 20px;
 }
 
 body {
-  font-family: "Roboto";
+  font-family: "Roboto" sans-serif;
   margin: 0;
+  animation: hide 3s linear forwards;
 }
 
+@keyframes hide {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .footer {
   display: flex;
   flex-direction: column;
@@ -101,6 +110,11 @@ body {
   transform: scale(1.03);
 }
 
+.loader {
+  position: absolute;
+  margin: 80px;
+}
+
 .explorer {
   border-top: 2px rgba(97, 92, 92, 0.2431372549);
   border-top-style: groove;
@@ -153,9 +167,23 @@ body {
   font-size: 22px;
 }
 .fctment__liste {
+  display: grid;
+  grid-template-columns: 1fr;
   margin: auto;
   padding-left: 10px;
   counter-reset: number;
+}
+@media (min-width: 750px) {
+  .fctment__liste {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0 50px;
+  }
+}
+@media (min-width: 1280px) {
+  .fctment__liste {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0 50px;
+  }
 }
 .fctment__liste li {
   margin-top: 20px;
@@ -190,6 +218,7 @@ body {
 
 .restaurants {
   display: grid;
+  grid-template-columns: 1fr;
   padding-bottom: 40px;
   background-color: #F6F6F6;
 }
@@ -292,17 +321,19 @@ body {
   margin-top: 10px;
   font-size: 28px;
   font-weight: 300;
-  font-style: italic;
 }
 .header img {
-  height: 250px;
+  height: 270px;
   width: 100%;
   object-fit: cover;
 }
 
+.background {
+  background-color: #f7f7f7;
+}
+
 .resto {
   background-color: #f7f7f7;
-  padding-bottom: 35px;
   margin-left: auto;
   margin-right: auto;
   top: -70px;
@@ -320,14 +351,19 @@ body {
 }
 .resto__nom h2 {
   font-family: "Shrikhand";
-  font-weight: 100;
+  font-weight: 500;
   margin-left: 20px;
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
 .resto__coeur .fa-heart {
   position: absolute;
-  right: 25px;
-  top: 37px;
-  font-size: 22px;
+  right: 50px;
+  top: 47px;
+  font-size: 26px;
+}
+.resto .bouton {
+  margin-top: 25px;
 }
 
 .menu {
@@ -342,9 +378,10 @@ body {
   overflow: hidden;
 }
 .menu h3 {
-  font-size: 17px;
+  font-size: 15px;
   font-weight: 300;
   position: relative;
+  margin-bottom: 20px;
 }
 .menu h3:before {
   position: absolute;
@@ -361,7 +398,7 @@ body {
   display: flex;
   background-color: white;
   border-radius: 15px;
-  margin-bottom: 20px;
+  margin-bottom: 12px;
   box-shadow: 0 3px 9px #BEBEBE;
 }
 .menu__contenu {
@@ -391,10 +428,22 @@ body {
 .menu span {
   display: flex;
   align-items: flex-end;
-  font-weight: 500;
+  font-weight: 300;
   margin-left: auto;
   margin-right: 20px;
-  padding-bottom: 15px;
+  padding-bottom: 12px;
+}
+@media (min-width: 750px) {
+  .menu {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+@media (min-width: 1280px) {
+  .menu {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
 }
 
 /*
