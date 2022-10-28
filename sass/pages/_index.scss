@@ -1,7 +1,30 @@
-.loader{
+//.loader{
+//    position: absolute;
+ //   margin: 80px;
+//}
+.loader {
     position: absolute;
-    margin: 80px;
-}
+    margin: 300px 45%;
+    border: 12px solid transparent;
+    border-top: 12px solid $color-primaire;
+    border-bottom: 12px solid $color_secondaire;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    animation: spinner 1s linear ;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 4;
+  }
+  
+  @keyframes spinner {
+    0% { transform: rotate(0deg); }
+    99.9% { 
+        transform: rotate(360deg); 
+        opacity: 1;
+     }
+    100% {opacity: 0;}
+  }
+  
 
 .explorer{
     border-top: 2px $color_bordure_ville;
@@ -196,15 +219,15 @@
     margin-right: 40px;
     margin-top: 20px;
     font-size: 16px;
-    .fa-heart{
-       font-weight: 100;
-    }
-    :hover{
-     background-color: transparent;
-     background-image: linear-gradient($color_primaire, $color_secondaire);
-     background-clip: text;
-     //-webkit-background-clip: text;
-     //transform: scale(0);
-     //transition: all 1000ms;
-       }
-     }
+   
+ }   
+ .fa-heart:hover{
+        font-weight: 600;
+        background: -webkit-gradient(linear, from(green),to(yellow));
+       // background-image: linear-gradient($color_primaire, $color_secondaire);
+        //background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        //transform: scale(0);
+        //transition: all 1000ms;
+        }
