@@ -308,14 +308,22 @@ body {
 .card_icon-coeur {
   margin-right: 40px;
   margin-top: 20px;
-  font-size: 16px;
+  font-size: 26px;
 }
-
-.fa-heart:hover {
+.card_icon-coeur .fa-heart {
+  font-weight: 100;
+}
+.card_icon-coeur .fa-heart:hover {
   font-weight: 600;
-  background: -webkit-gradient(linear, from(green), to(yellow));
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  transition: all 800ms ease-in-out;
+}
+.card_icon-coeur:hover {
+  background-color: transparent;
+  background-image: linear-gradient(#9356DC, #FF79DA);
+  background-clip: text;
 }
 
 .header {
@@ -376,14 +384,30 @@ body {
   margin-top: 30px;
   margin-bottom: 10px;
 }
-.resto__coeur .fa-heart {
+.resto .bouton {
+  margin-top: 25px;
+}
+
+.resto__coeur {
   position: absolute;
   right: 50px;
   top: 47px;
   font-size: 26px;
 }
-.resto .bouton {
-  margin-top: 25px;
+.resto__coeur .fa-heart {
+  font-weight: 100;
+}
+.resto__coeur .fa-heart:hover {
+  font-weight: 600;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 1000ms;
+}
+.resto__coeur:hover {
+  background-color: transparent;
+  background-image: linear-gradient(#9356DC, #FF79DA);
+  background-clip: text;
 }
 
 .menu {

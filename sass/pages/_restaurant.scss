@@ -61,17 +61,31 @@
             margin-bottom: 10px;
         }     
     }
-    &__coeur{
-        .fa-heart{
-            position: absolute;
-            right: 50px;
-            top: 47px;
-            font-size: 26px;
-        }
-    }
     .bouton{
         margin-top: 25px;
     }
+}
+
+.resto__coeur{
+    position: absolute;
+    right: 50px;
+    top: 47px;
+    font-size: 26px;
+    .fa-heart{
+        font-weight: 100;
+        &:hover{
+            font-weight: 600;
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            transition: all 1000ms;
+        }
+    }
+    &:hover{
+        background-color: transparent;
+        background-image: linear-gradient($color_primaire, $color_secondaire);
+        background-clip: text;
+    } 
 }
 
 .menu{
